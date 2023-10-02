@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Likvido.Polly.Http", "Likvido.Polly.Http\Likvido.Polly.Http.csproj", "{DAB18B11-F5D8-4E9F-BDEC-5BF1DCEC7710}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionFolder", "{DEF6A122-14FF-4FFB-9121-EC3A6F91964E}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+		version.props = version.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Github", "Github", "{FCDCD1C1-2B1F-4A00-AFF8-81EEE888090F}"
+	ProjectSection(SolutionItems) = preProject
+		..\.github\depdendabot.yml = ..\.github\depdendabot.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Workflows", "Workflows", "{6D0EFF0E-6876-478E-9550-79CF79572456}"
+	ProjectSection(SolutionItems) = preProject
+		..\.github\workflows\nuget.yml = ..\.github\workflows\nuget.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAB18B11-F5D8-4E9F-BDEC-5BF1DCEC7710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAB18B11-F5D8-4E9F-BDEC-5BF1DCEC7710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAB18B11-F5D8-4E9F-BDEC-5BF1DCEC7710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAB18B11-F5D8-4E9F-BDEC-5BF1DCEC7710}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FCDCD1C1-2B1F-4A00-AFF8-81EEE888090F} = {DEF6A122-14FF-4FFB-9121-EC3A6F91964E}
+		{6D0EFF0E-6876-478E-9550-79CF79572456} = {FCDCD1C1-2B1F-4A00-AFF8-81EEE888090F}
+	EndGlobalSection
+EndGlobal
