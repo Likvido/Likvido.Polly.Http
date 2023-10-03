@@ -31,7 +31,8 @@ namespace Likvido.Polly.Http
                     ShouldHandle = new PredicateBuilder<HttpResponseMessage>()
                         .HandleTransientHttpError()
                         .HandleSocketException()
-                        .HandleRateLimitHit(),
+                        .HandleRateLimitHit()
+                        .HandleStatusCodes(options.ExtraRetryStatusCodes),
                     MaxRetryAttempts = options.MaxRetryAttempts,
                     Delay = options.Delay,
                     DelayGenerator = LikvidoDelayGenerators.RateLimitAwareDelayGenerator(),
