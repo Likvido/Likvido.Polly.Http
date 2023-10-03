@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Net.Sockets;
@@ -28,6 +30,12 @@ namespace Likvido.Polly.Http
             where T : HttpResponseMessage
         {
             return predicateBuilder.HandleResult(response => (int)response.StatusCode == 429);
+        }
+
+        public static PredicateBuilder<T> HandleStatusCodes<T>(this PredicateBuilder<T> predicateBuilder, IReadOnlyCollection<HttpStatusCode> extraStatusCodes) 
+            where T : HttpResponseMessage
+        {
+            return predicateBuilder.HandleResult(response => extraStatusCodes.Contains(response.StatusCode));
         }
     }
 }
